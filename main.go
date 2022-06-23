@@ -1,7 +1,29 @@
 package main
 
-import "fmt"
-
 func main() {
-	fmt.Println("Hi")
+	deck := newDeck()
+
+	card := deck.DrawCard()
+	card.Show()
+
+	deck.ShowDeck()
+}
+
+func newDeck() Deck {
+	return Deck{
+		Cards: []Card{
+			newCard(),
+			newCard(),
+			newCard(),
+			newCard(),
+			newCard(),
+		},
+	}
+}
+
+func newCard() Card {
+	return Card{
+		Face:   "Spades",
+		Number: "5",
+	}
 }
