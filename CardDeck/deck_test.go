@@ -12,7 +12,7 @@ func TestNewDeck(t *testing.T) {
 		want := 52
 
 		if got != want {
-			t.Errorf("Deck has wrong number of cards")
+			t.Errorf("Wanted: %v but got: %v", want, got)
 		}
 	})
 	t.Run("Check first card is 2 of spades", func(t *testing.T) {
@@ -31,13 +31,15 @@ func TestNewDeck(t *testing.T) {
 
 func TestLoadFromJSONFile(t *testing.T) {
 	t.Run("check file loaded successfully", func(t *testing.T) {
+		deck := newDeck()
+		deck.saveToJSONFile("testFiles/cleanDeck.json")
 		d := Deck{}
-		d.loadFromJSONFile("cleanDeck.json")
+		d.loadFromJSONFile("testFiles/cleanDeck.json")
 		got := len(d.Cards)
 		want := 52
 
 		if got != want {
-			t.Errorf("Deck has wrong number of cards")
+			t.Errorf("Wanted: %v but got: %v", want, got)
 		}
 	})
 }
