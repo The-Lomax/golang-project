@@ -1,29 +1,17 @@
 package main
 
+import "fmt"
+
 func main() {
-	deck := newDeck()
+	deck := Deck{}
 
-	card := deck.DrawCard()
-	card.Show()
-
-	deck.ShowDeck()
-}
-
-func newDeck() Deck {
-	return Deck{
-		Cards: []Card{
-			newCard(),
-			newCard(),
-			newCard(),
-			newCard(),
-			newCard(),
-		},
-	}
-}
-
-func newCard() Card {
-	return Card{
-		Face:   "Spades",
-		Number: "5",
+	if err := deck.loadFromJSONFile("cleanDeck.json"); err == nil {
+		hand := Deck{}
+		deck.Shuffle()
+		if err := deck.Deal(3, &hand); err == nil {
+			hand.saveToJSONFile("dealtHand.json")
+		} else {
+			fmt.Println(err)
+		}
 	}
 }
