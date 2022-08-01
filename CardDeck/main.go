@@ -5,7 +5,7 @@ import "fmt"
 func main() {
 	deck := Deck{}
 
-	if err := deck.loadFromJSONFile("cleanDeck.json"); err == nil {
+	if err := deck.loadFromJSONFile("testFiles/cleanDeck.json"); err == nil {
 		hand := Deck{}
 		deck.Shuffle()
 		if err := deck.Deal(3, &hand); err == nil {
