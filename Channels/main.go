@@ -45,9 +45,9 @@ func main() {
 	}
 
 	for u := range c {
-		go func() {
+		go func(site string) {
 			time.Sleep(time.Second * 3)
-			checker.checkSite(u, c)
-		}()
+			checker.checkSite(site, c)
+		}(u)
 	}
 }
