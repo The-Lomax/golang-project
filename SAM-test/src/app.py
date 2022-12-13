@@ -3,8 +3,8 @@ import boto3
 import os
 
 print("starting lambda handler")
-tableName = os.environ('TABLE_NAME')
-regionName = os.environ('REGION_NAME')
+tableName = os.getenv('TABLE_NAME')
+regionName = os.getenv('REGION_NAME')
 ddb = boto3.client('dynamodb', region_name=regionName)
 
 def respond(err, res=None):
