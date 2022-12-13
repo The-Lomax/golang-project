@@ -1,0 +1,21 @@
+# SAM FILE
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: 'AWS::Serverless-2016-10-31'
+Description: SAM template to deploy lambda function
+
+Resources:
+  HelloFunction:
+    Type: 'AWS::Serverless::Function'
+    Properties:
+      Handler: app.lambda_handler
+      Runtime: python3.8
+      CodeUri: src/
+      Description: Demo of a lambda function
+      MemorySize: 128
+      Timeout: 10
+      Events:
+        CatchAll:
+          Type: Api
+          Properties:
+            Path: /
+            Method: GET
