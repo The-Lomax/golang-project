@@ -1,8 +1,14 @@
 import json
+import boto3
+import os
 
 print("starting lambda handler")
+tableName = os.environ('TABLE_NAME')
+regionName = os.environ('REGION_NAME')
+ddb = boto3.client('dynamodb', region_name=regionName)
 
 def respond(err, res=None):
+    ddb.put_item(TableName=tableName, Item={'name':{'S':'Jack'},'lastName':{'S':'Black'}, 'age':{'N':31}})
     return {
         "statusCode": "400" if err else "200",
         "body": json.dumps({
