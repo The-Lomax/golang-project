@@ -21,7 +21,7 @@ Resources:
             Method: GET
       Policies:
         - DynamoDBCrudPolicy:
-          TableName: !Ref DynamoDBDemoTable
+            TableName: !Ref DynamoDBDemoTable
       Environment:
         Variables:
           TABLE_NAME: !Ref DynamoDBDemoTable
