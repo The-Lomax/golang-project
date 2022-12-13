@@ -26,6 +26,9 @@ Resources:
         Variables:
           TABLE_NAME: !Ref DynamoDBDemoTable
           REGION_NAME: !Ref AWS::Region
+      AutoPublishAlias: dev
+      DeploymentPreference:
+        Type: Canary50Percent3Minutes
 
   DynamoDBDemoTable:
     Type: AWS::DynamoDB::Table
