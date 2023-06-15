@@ -1,0 +1,785 @@
+[
+    {
+        "summary": {
+            "ecapaAvailable": false
+        },
+        "isOwner": false,
+        "myCargoDropOff": {
+            "dropOffStationDetails": {
+                "dropOffStation": "GDL",
+                "displayDropOffAdress": false
+            },
+            "directTruckPickUp": false,
+            "dropOffTimings": {
+                "lastKnownLatestAcceptanceTimeSecure": {
+                    "dateTime": {
+                        "date": {
+                            "year": 2023,
+                            "month": 6,
+                            "day": 7
+                        },
+                        "time": {
+                            "hour": 14,
+                            "minute": 0,
+                            "second": 0,
+                            "nano": 0
+                        }
+                    },
+                    "offset": {
+                        "totalSeconds": -18000
+                    }
+                }
+            }
+        },
+        "needToCheckAirwaybillStatus": false,
+        "shipment": {
+            "airWaybillNumber": "074-53814751",
+            "lastUpdatedTime": {
+                "dateTime": {
+                    "date": {
+                        "year": 2023,
+                        "month": 6,
+                        "day": 12
+                    },
+                    "time": {
+                        "hour": 4,
+                        "minute": 13,
+                        "second": 58,
+                        "nano": 0
+                    }
+                },
+                "offset": {
+                    "totalSeconds": 0
+                }
+            },
+            "reAssignmentInfoAvailable": true,
+            "estimatedPickupTime": {
+                "dateTime": {
+                    "date": {
+                        "year": 2023,
+                        "month": 6,
+                        "day": 16
+                    },
+                    "time": {
+                        "hour": 1,
+                        "minute": 45,
+                        "second": 0,
+                        "nano": 0
+                    }
+                },
+                "offset": {
+                    "totalSeconds": 28800
+                }
+            },
+            "shipmentStage": {
+                "phase": "EN_ROUTE",
+                "status": "REPLANNED",
+                "evaluationStatus": true
+            },
+            "originDestination": {
+                "departureLocation": "GDL",
+                "arrivalLocation": "MNL"
+            }
+        },
+        "shipmentCharacteristics": {
+            "commodityCode": "GENE",
+            "commodityName": "CONSOLIDATION CONSOLIDATION",
+            "airlineProductIdentifier": "R21",
+            "airlineProductName": "GENERAL",
+            "totalGrossWeight": {
+                "value": 239.0,
+                "unit": "KG"
+            },
+            "totalVolume": {
+                "value": 1.43,
+                "unit": "MC"
+            },
+            "totalPieceCount": 1,
+            "specialHandling": [
+                {
+                    "code": "SPX"
+                },
+                {
+                    "code": "HEA"
+                },
+                {
+                    "code": "ECP"
+                },
+                {
+                    "code": "EAP"
+                }
+            ]
+        },
+        "flightPlan": {
+            "segmentDetails": [
+                {
+                    "departureLocation": "GDL",
+                    "arrivalLocation": "MEX",
+                    "totalPieceCount": 1,
+                    "totalGrossWeight": {
+                        "value": 239.0,
+                        "unit": "KG"
+                    },
+                    "totalVolume": {
+                        "value": 1.43,
+                        "unit": "MC"
+                    },
+                    "isStackable": true,
+                    "isTurnable": false,
+                    "transportIdentifier": "6R0301",
+                    "modeCode": 4,
+                    "modeCodeDescription": "Air transport",
+                    "vehicleType": "76F",
+                    "transportScheduledDepartureTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 8
+                            },
+                            "time": {
+                                "hour": 9,
+                                "minute": 10,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": -18000
+                        }
+                    },
+                    "transportScheduledArrivalTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 8
+                            },
+                            "time": {
+                                "hour": 10,
+                                "minute": 10,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": -18000
+                        }
+                    },
+                    "bookingStatus": "SS",
+                    "bookingStatusDescription": "CONFIRMED"
+                },
+                {
+                    "departureLocation": "MEX",
+                    "arrivalLocation": "CDG",
+                    "totalPieceCount": 1,
+                    "totalGrossWeight": {
+                        "value": 239.0,
+                        "unit": "KG"
+                    },
+                    "totalVolume": {
+                        "value": 1.43,
+                        "unit": "MC"
+                    },
+                    "isStackable": true,
+                    "isTurnable": false,
+                    "transportIdentifier": "AF6723",
+                    "modeCode": 4,
+                    "modeCodeDescription": "Air transport",
+                    "vehicleType": "77X",
+                    "transportScheduledDepartureTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 10
+                            },
+                            "time": {
+                                "hour": 2,
+                                "minute": 20,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": -18000
+                        }
+                    },
+                    "transportActualDepartureTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 10
+                            },
+                            "time": {
+                                "hour": 3,
+                                "minute": 1,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": -21600
+                        }
+                    },
+                    "transportScheduledArrivalTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 10
+                            },
+                            "time": {
+                                "hour": 21,
+                                "minute": 5,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": 7200
+                        }
+                    },
+                    "transportActualArrivalTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 10
+                            },
+                            "time": {
+                                "hour": 21,
+                                "minute": 7,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": 7200
+                        }
+                    },
+                    "bookingStatus": "SS",
+                    "bookingStatusDescription": "CONFIRMED"
+                },
+                {
+                    "departureLocation": "CDG",
+                    "arrivalLocation": "AMS",
+                    "totalPieceCount": 1,
+                    "totalGrossWeight": {
+                        "value": 239.0,
+                        "unit": "KG"
+                    },
+                    "totalVolume": {
+                        "value": 1.43,
+                        "unit": "MC"
+                    },
+                    "isStackable": true,
+                    "isTurnable": false,
+                    "transportIdentifier": "AF6970",
+                    "modeCode": 3,
+                    "modeCodeDescription": "Road transport",
+                    "vehicleType": "RFS",
+                    "transportScheduledDepartureTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 11
+                            },
+                            "time": {
+                                "hour": 20,
+                                "minute": 0,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": 7200
+                        }
+                    },
+                    "transportScheduledArrivalTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 12
+                            },
+                            "time": {
+                                "hour": 4,
+                                "minute": 0,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": 7200
+                        }
+                    },
+                    "transportActualArrivalTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 12
+                            },
+                            "time": {
+                                "hour": 5,
+                                "minute": 35,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": 7200
+                        }
+                    },
+                    "bookingStatus": "SS",
+                    "bookingStatusDescription": "CONFIRMED"
+                },
+                {
+                    "departureLocation": "AMS",
+                    "arrivalLocation": "MNL",
+                    "totalPieceCount": 1,
+                    "totalGrossWeight": {
+                        "value": 239.0,
+                        "unit": "KG"
+                    },
+                    "totalVolume": {
+                        "value": 1.43,
+                        "unit": "MC"
+                    },
+                    "isStackable": true,
+                    "isTurnable": false,
+                    "transportIdentifier": "KL0805",
+                    "modeCode": 4,
+                    "modeCodeDescription": "Air transport",
+                    "vehicleType": "789",
+                    "transportScheduledDepartureTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 14
+                            },
+                            "time": {
+                                "hour": 19,
+                                "minute": 30,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": 7200
+                        }
+                    },
+                    "transportScheduledArrivalTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 15
+                            },
+                            "time": {
+                                "hour": 18,
+                                "minute": 45,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": 28800
+                        }
+                    },
+                    "bookingStatus": "SS",
+                    "bookingStatusDescription": "CONFIRMED"
+                }
+            ]
+        },
+        "milestones": {
+            "events": [
+                {
+                    "eventCode": "BKG",
+                    "eventLocation": "GDL",
+                    "totalPieceCount": 1,
+                    "totalGrossWeight": {
+                        "value": 239.0,
+                        "unit": "KG"
+                    },
+                    "eventActualTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 2
+                            },
+                            "time": {
+                                "hour": 13,
+                                "minute": 36,
+                                "second": 42,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": -18000
+                        }
+                    },
+                    "sequence": 1,
+                    "lastStatus": false
+                },
+                {
+                    "eventCode": "FWB",
+                    "eventLocation": "GDL",
+                    "totalPieceCount": 1,
+                    "totalGrossWeight": {
+                        "value": 239.0,
+                        "unit": "KG"
+                    },
+                    "eventActualTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 5
+                            },
+                            "time": {
+                                "hour": 16,
+                                "minute": 47,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": -21600
+                        }
+                    },
+                    "sequence": 2,
+                    "lastStatus": false,
+                    "validationStatus": "PROCESSED_WITH_WARNINGS"
+                },
+                {
+                    "eventCode": "FOH",
+                    "eventLocation": "GDL",
+                    "totalPieceCount": 1,
+                    "totalGrossWeight": {
+                        "value": 239.0,
+                        "unit": "KG"
+                    },
+                    "eventActualTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 8
+                            },
+                            "time": {
+                                "hour": 15,
+                                "minute": 30,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": -21600
+                        }
+                    },
+                    "sequence": 3,
+                    "lastStatus": false
+                },
+                {
+                    "eventCode": "RCS",
+                    "eventLocation": "GDL",
+                    "totalPieceCount": 1,
+                    "totalGrossWeight": {
+                        "value": 239.0,
+                        "unit": "KG"
+                    },
+                    "eventActualTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 8
+                            },
+                            "time": {
+                                "hour": 15,
+                                "minute": 30,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": -21600
+                        }
+                    },
+                    "sequence": 4,
+                    "lastStatus": false
+                },
+                {
+                    "eventCode": "DEP",
+                    "eventLocation": "MEX",
+                    "totalPieceCount": 1,
+                    "totalGrossWeight": {
+                        "value": 239.0,
+                        "unit": "KG"
+                    },
+                    "eventActualTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 10
+                            },
+                            "time": {
+                                "hour": 3,
+                                "minute": 1,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": -21600
+                        }
+                    },
+                    "transportIdentifier": "AF6723",
+                    "modeCode": 4,
+                    "modeCodeDescription": "Air transport",
+                    "departureLocation": "MEX",
+                    "arrivalLocation": "CDG",
+                    "sequence": 8,
+                    "lastStatus": false
+                },
+                {
+                    "eventCode": "ARR",
+                    "eventLocation": "CDG",
+                    "totalPieceCount": 1,
+                    "totalGrossWeight": {
+                        "value": 239.0,
+                        "unit": "KG"
+                    },
+                    "eventActualTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 10
+                            },
+                            "time": {
+                                "hour": 21,
+                                "minute": 7,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": 7200
+                        }
+                    },
+                    "transportIdentifier": "AF6723",
+                    "modeCode": 4,
+                    "modeCodeDescription": "Air transport",
+                    "departureLocation": "MEX",
+                    "arrivalLocation": "CDG",
+                    "sequence": 9,
+                    "lastStatus": false
+                },
+                {
+                    "eventCode": "DEP",
+                    "eventLocation": "CDG",
+                    "totalPieceCount": 1,
+                    "totalGrossWeight": {
+                        "value": 239.0,
+                        "unit": "KG"
+                    },
+                    "eventActualTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 11
+                            },
+                            "time": {
+                                "hour": 19,
+                                "minute": 27,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": 7200
+                        }
+                    },
+                    "transportIdentifier": "AF6970",
+                    "departureLocation": "CDG",
+                    "arrivalLocation": "AMS",
+                    "sequence": 11,
+                    "lastStatus": false
+                },
+                {
+                    "eventCode": "ARR",
+                    "eventLocation": "AMS",
+                    "totalPieceCount": 1,
+                    "totalGrossWeight": {
+                        "value": 239.0,
+                        "unit": "KG"
+                    },
+                    "eventActualTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 12
+                            },
+                            "time": {
+                                "hour": 5,
+                                "minute": 35,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": 7200
+                        }
+                    },
+                    "transportIdentifier": "AF6970",
+                    "modeCode": 3,
+                    "modeCodeDescription": "Road transport",
+                    "departureLocation": "CDG",
+                    "arrivalLocation": "AMS",
+                    "sequence": 12,
+                    "lastStatus": false
+                },
+                {
+                    "eventCode": "RCF",
+                    "eventLocation": "AMS",
+                    "totalPieceCount": 1,
+                    "totalGrossWeight": {
+                        "value": 239.0,
+                        "unit": "KG"
+                    },
+                    "eventActualTime": {
+                        "dateTime": {
+                            "date": {
+                                "year": 2023,
+                                "month": 6,
+                                "day": 12
+                            },
+                            "time": {
+                                "hour": 6,
+                                "minute": 13,
+                                "second": 0,
+                                "nano": 0
+                            }
+                        },
+                        "offset": {
+                            "totalSeconds": 7200
+                        }
+                    },
+                    "transportIdentifier": "AF6970",
+                    "arrivalLocation": "AMS",
+                    "sequence": 13,
+                    "lastStatus": true
+                },
+                {
+                    "eventCode": "DEP",
+                    "eventLocation": "GDL",
+                    "totalPieceCount": 1,
+                    "transportIdentifier": "6R0301",
+                    "modeCode": 4,
+                    "modeCodeDescription": "Air transport",
+                    "departureLocation": "GDL",
+                    "arrivalLocation": "MEX",
+                    "sequence": 5,
+                    "lastStatus": false
+                },
+                {
+                    "eventCode": "ARR",
+                    "eventLocation": "MEX",
+                    "totalPieceCount": 1,
+                    "transportIdentifier": "6R0301",
+                    "modeCode": 4,
+                    "modeCodeDescription": "Air transport",
+                    "departureLocation": "GDL",
+                    "arrivalLocation": "MEX",
+                    "sequence": 6,
+                    "lastStatus": false
+                },
+                {
+                    "eventCode": "RCF",
+                    "eventLocation": "MEX",
+                    "totalPieceCount": 1,
+                    "transportIdentifier": "6R0301",
+                    "departureLocation": "GDL",
+                    "arrivalLocation": "MEX",
+                    "sequence": 7,
+                    "lastStatus": false
+                },
+                {
+                    "eventCode": "RCF",
+                    "eventLocation": "CDG",
+                    "totalPieceCount": 1,
+                    "transportIdentifier": "AF6723",
+                    "departureLocation": "MEX",
+                    "arrivalLocation": "CDG",
+                    "sequence": 10,
+                    "lastStatus": false
+                },
+                {
+                    "eventCode": "DEP",
+                    "eventLocation": "AMS",
+                    "totalPieceCount": 1,
+                    "transportIdentifier": "KL0805",
+                    "modeCode": 4,
+                    "modeCodeDescription": "Air transport",
+                    "departureLocation": "AMS",
+                    "arrivalLocation": "MNL",
+                    "sequence": 14,
+                    "lastStatus": false
+                },
+                {
+                    "eventCode": "ARR",
+                    "eventLocation": "MNL",
+                    "totalPieceCount": 1,
+                    "transportIdentifier": "KL0805",
+                    "modeCode": 4,
+                    "modeCodeDescription": "Air transport",
+                    "departureLocation": "AMS",
+                    "arrivalLocation": "MNL",
+                    "sequence": 15,
+                    "lastStatus": false
+                },
+                {
+                    "eventCode": "RCF",
+                    "eventLocation": "MNL",
+                    "totalPieceCount": 1,
+                    "transportIdentifier": "KL0805",
+                    "departureLocation": "AMS",
+                    "arrivalLocation": "MNL",
+                    "sequence": 16,
+                    "lastStatus": false
+                },
+                {
+                    "eventCode": "NFD",
+                    "eventLocation": "MNL",
+                    "totalPieceCount": 0,
+                    "sequence": 17,
+                    "lastStatus": false
+                },
+                {
+                    "eventCode": "AWD",
+                    "eventLocation": "MNL",
+                    "totalPieceCount": 0,
+                    "sequence": 18,
+                    "lastStatus": false
+                },
+                {
+                    "eventCode": "DLV",
+                    "eventLocation": "MNL",
+                    "totalPieceCount": 0,
+                    "sequence": 19,
+                    "lastStatus": false
+                }
+            ]
+        }
+    }
+]
