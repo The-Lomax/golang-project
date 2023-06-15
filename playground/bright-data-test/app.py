@@ -1,12 +1,13 @@
 import asyncio
 import time
+import os
 import datetime
 from playwright.async_api import async_playwright
 from python_internal.captcha import get_number_from_image
 
-bdcid = 'hl_c261c78a'
-bdzone = 'scrapebrowser'
-bdpw = 'zti755qje8aa'
+bdcid = os.getenv('BDCID')
+bdzone = os.getenv('BDZONE')
+bdpw = os.getenv('BDPW')
 
 auth = f'brd-customer-{bdcid}-zone-{bdzone}:{bdpw}'
 browser_url = f'wss://{auth}@zproxy.lum-superproxy.io:9222'
