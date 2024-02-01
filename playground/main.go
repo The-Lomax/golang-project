@@ -3,8 +3,11 @@ package main
 import (
 	"encoding/json"
 	"fmt"
+	"io"
 	"io/ioutil"
 	"log"
+	"net/http"
+	"net/url"
 	"time"
 
 	"github.com/FerdinaKusumah/excel2json"
@@ -39,7 +42,7 @@ func parseLocalTime(eDateTime, eLocation string) string {
 	return locTime.Format(isoForm)
 }
 
-func main() {
+func test() {
 	// fmt.Println(parseLocalTime("20-May-2022 09:35", "Asia/Kolkata"))
 	var (
 		result []*map[string]interface{}
@@ -70,4 +73,59 @@ func main() {
 	} else {
 		fmt.Println("unable to write to file")
 	}
+}
+
+func callGCPCrawler() error {
+	testAwb := "023-88991431"
+
+	fmt.Println("sending request to GCP")
+	client := &http.Client{}
+
+	resource := "/track"
+	params := url.Values{}
+	params.Add("providerType", "crawler")
+	params.Add("awb", testAwb)
+
+	u, _ := url.ParseRequestURI("https://api.tnt.cargoai.co")
+	u.Path = resource
+	u.RawQuery = params.Encode()
+	urlStr := fmt.Sprintf("%v", u)
+
+	req, err := http.NewRequest("GET", urlStr, nil)
+	if err != nil {
+		fmt.Println("Error creating HTTP request:", err)
+		return err
+	}
+	req.Header.Add("X-API-Key", "im0dvz86lb903byaedoe9vc5v9hf2ofm")
+
+	resp, err := client.Do(req)
+	if err != nil {
+		fmt.Println("Error sending HTTP request:", err)
+		return err
+	}
+
+	if resp == nil {
+		fmt.Println("empty response from GCP")
+		return err
+	}
+
+	if resp.StatusCode != 200 {
+		fmt.Println("GCP response status code:", resp.StatusCode)
+		return err
+	}
+
+	resBody, err := io.ReadAll(resp.Body)
+	if err != nil {
+		fmt.Println("Error reading response body:", err)
+		return err
+	}
+
+	fmt.Printf("GCP response: %v\n", string(resBody))
+
+	return nil
+}
+
+func main() {
+	// test()
+	fmt.Println(callGCPCrawler())
 }
